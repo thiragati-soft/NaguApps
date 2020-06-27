@@ -1,0 +1,104 @@
+
+h4{
+    margin:0px;
+    padding-bottom: 15px;
+}
+.login, .forgot, .register{
+    position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 480px;
+  /* background-color: #ccc; */
+  border-radius: 3px;
+  }
+
+  .login, .forgot{
+      height:165px !important;
+  }
+
+.login .form-group, .forgot .form-group, .register .form-group
+{
+    padding: 0px;
+    margin: 0;
+}
+
+.login .form-control, .forgot .form-control
+{
+    border-radius: 0 !important;
+    height: calc(1.5em + .75rem + 15px);
+    box-shadow: none !important;
+}
+
+.login .form-group:first-child .form-control
+{
+    border-top-left-radius: 15px !important;
+    border-right: 0;
+}
+
+.login .form-group:nth-child(2) .form-control
+{
+    border-top-right-radius: 15px !important;
+}
+
+.login .btn, .forgot .btn, .register .btn{
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+    box-shadow: none !important;
+}
+
+.forgot .form-group:first-child .form-control
+{
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+}
+
+.register{
+    height: 410px !important;
+}
+
+.register .form-control{
+  border-radius: 0;
+  border:none;
+  border: 1px solid #cccccc;
+  border-bottom: 0 !important;
+  height: calc(1.5em + .75rem + 15px);
+  box-shadow: none !important;
+}
+
+.register .form-group:first-child .form-control{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+@media screen and (max-width:575px)
+{
+  .login, .forgot, .register{
+    position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  height: 100px;
+  /* background-color: #ccc; */
+  border-radius: 3px;
+  }
+
+  .login .form-group:first-child, .login .form-group:nth-child(2){
+      width: 50%;
+      float: left;
+  }
+
+  .login .form-group:last-child{
+    width: 100% !important;
+}
+
+  .login .btn
+  {
+      width: 100% !important;
+  }
+}
